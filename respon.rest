@@ -1,0 +1,35 @@
+#rest client test for backend
+
+### Login
+POST http://localhost:2000/login
+content-type: application/json
+
+{    
+    "email":"angga@gmail.com",
+    "password":"angga123456"
+}
+
+### Get value by id
+GET http://localhost:2000/user
+
+### Create model
+POST http://localhost:2000/users/userRegister
+content-type: application/json
+
+{
+    "username":"anggaz",
+    "email": "darza@gmail.com",
+    "password": "anggaCoba"
+}
+
+### Update model
+PUT http://localhost:2000/
+content-type: application/json
+
+{
+   
+}
+
+### Delete value
+DELETE http://localhost:2000/api/values/1
+ 
